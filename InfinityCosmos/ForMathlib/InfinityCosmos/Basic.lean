@@ -1,4 +1,5 @@
 import Architect
+import LeanAtlas.Metadata.Attribute.Meta
 import InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialCategory.Cotensors
 import InfinityCosmos.ForMathlib.CategoryTheory.Enriched.Limits.HasConicalTerminal
 import InfinityCosmos.ForMathlib.CategoryTheory.Enriched.Limits.IsConicalTerminal
@@ -58,7 +59,8 @@ open PreInfinityCosmos InfinityCosmos Enriched
 variable (K : Type u) [Category.{v} K]
 
 /-- An `InfinityCosmos` extends a `PreInfinityCosmos` with limit and isofibration axioms. -/
-@[blueprint
+@[formalMeta "∞-Cosmos" "An ∞-cosmos is a category enriched over quasi-categories with completeness and isofibration axioms" "Definition 1.2.1" mainTheorem,
+blueprint
   "defn:cosmos"
   (title := "$\\infty$-cosmos")
   (statement := /--
