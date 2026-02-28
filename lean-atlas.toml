@@ -93,4 +93,4 @@ name = "InfinityCosmos.ForMathlib.InfinityCosmos.Isofibrations"
 name = "InfinityCosmos.Init"
 
 [atlas]
-root = "../lean-atlas"
+root = "../lean-atlas-for-infinity-cosmos"
