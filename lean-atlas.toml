@@ -1,0 +1,96 @@
+[project]
+name = "InfinityCosmos"
+namespace = "InfinityCosmos"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.Quasicategory.Basic"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.Quasicategory.TwoTruncated"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplexCategory"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialCategory.Basic"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialCategory.Cotensors"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialSet.Basic"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialSet.CoherentIso"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialSet.CompStruct"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialSet.Coskeletal"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialSet.Homotopy"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialSet.HomotopyCat"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialSet.Horn"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialSet.Monoidal"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialSet.MorphismProperty"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialSet.Nerve"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialSet.NerveAdjunction"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialSet.StdSimplex"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.CategoryTheory.Bicategory.Strict.Closed"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.CategoryTheory.Enriched.Basic"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.CategoryTheory.Enriched.Cotensors"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.CategoryTheory.Enriched.Limits.HasConicalLimits"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.CategoryTheory.Enriched.Limits.HasConicalTerminal"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.CategoryTheory.Enriched.Limits.IsConicalLimit"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.CategoryTheory.Enriched.Limits.IsConicalTerminal"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.CategoryTheory.Enriched.MonoidalProdCat"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.CategoryTheory.Enriched.Tensors"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.InfinityCosmos.Basic"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.InfinityCosmos.Goals"
+
+[[modules]]
+name = "InfinityCosmos.ForMathlib.InfinityCosmos.Isofibrations"
+
+[[modules]]
+name = "InfinityCosmos.Init"
+
+[atlas]
+root = "../lean-atlas"
