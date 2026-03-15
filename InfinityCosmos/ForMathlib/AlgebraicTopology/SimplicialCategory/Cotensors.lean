@@ -1,4 +1,5 @@
 import Architect
+import LeanAtlas.Metadata.Attribute.Meta
 import InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialCategory.Basic
 import InfinityCosmos.ForMathlib.CategoryTheory.Enriched.Cotensors
 
@@ -139,7 +140,10 @@ noncomputable def cotensorContraMap {U V : SSet} (i : U ⟶ V) (A : K) : V ⋔ A
   cotensorPrecompose _ _ i
 
 
-@[blueprint
+@[formalMeta "Cotensor Bifunctoriality"
+  "The simplicial cotensor defines a bifunctor, with naturality following from the universal property"
+  "Lemma 1.1.8" mainTheorem,
+blueprint
   "lem:cotensor-bifunctor"
   (statement := /--
   Assuming such objects exist, the simplicial cotensor defines a bifunctor

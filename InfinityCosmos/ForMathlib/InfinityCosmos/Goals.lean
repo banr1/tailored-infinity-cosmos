@@ -119,6 +119,8 @@ noncomputable def forgetEnrichment.equiv :
 noncomputable instance bicategory : Bicategory K :=
   CatEnrichedOrdinary.instBicategory
 
+@[formalMeta "Strict Bicategory of ∞-Cosmos"
+  "An ∞-cosmos gives rise to a strict bicategory via its Cat-enriched structure" mainTheorem]
 /-- The strict bicategory of quasicategories extracted from `QCat.CatEnrichedOrdinaryCat`. -/
 noncomputable instance strictBicategory : Bicategory.Strict K :=
   CatEnrichedOrdinary.instStrict

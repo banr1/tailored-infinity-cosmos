@@ -18,6 +18,9 @@ variable (K : Type u) [Category.{v} K] [SimplicialCategory K]
 
 /-- A `PreInfinityCosmos` is a simplicially enriched category whose hom-spaces are quasi-categories
 and whose morphisms come equipped with a special class of isofibrations. -/
+@[formalMeta "Pre-∞-Cosmos"
+  "A simplicially enriched category with quasi-category hom-spaces and a distinguished class of isofibrations"
+  "Definition 1.2.1" mainTheorem]
 class PreInfinityCosmos extends SimplicialCategory K where
   [has_qcat_homs : ∀ {X Y : K}, SSet.Quasicategory (EnrichedCategory.Hom X Y)]
   IsIsofibration : MorphismProperty K

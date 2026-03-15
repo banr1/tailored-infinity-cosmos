@@ -133,6 +133,8 @@ lemma cotensorInitialSquare_isPullback (V : SSet.{v}) {A B : K} (f : A ↠ B) :
   constructor
   apply IsTerminal.hom_ext (cotensorInitial_isTerminal _)
 
+@[formalMeta "Covariant Cotensor Closure"
+  "Cotensoring a fixed simplicial set with an isofibration yields an isofibration" mainTheorem]
 theorem cotensorCovMap_fibrant (V : SSet.{v}) {A B : K} (f : A ↠ B) :
     IsIsofibration (cotensorCovMap V f.1) := by
   have := IsPullback.lift_snd
@@ -159,6 +161,8 @@ lemma cotensorTerminalSquare_isPullback {U V : SSet.{v}} (i : U ⟶ V) (A : K) :
   constructor
   apply IsTerminal.hom_ext (cotensorToConicalTerminal_isTerminal U terminalIsConicalTerminal)
 
+@[formalMeta "Contravariant Cotensor Closure"
+  "Cotensoring a monomorphism with a fixed object yields an isofibration" mainTheorem]
 theorem cotensorContraMap_fibrant {U V : SSet} (i : U ⟶ V) [Mono i] (A : K) :
     IsIsofibration (cotensorContraMap i A) := by
   have := IsPullback.lift_fst

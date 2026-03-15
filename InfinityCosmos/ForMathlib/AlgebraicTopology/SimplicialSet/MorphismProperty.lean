@@ -4,6 +4,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Jack McKoen
 -/
 import Architect
+import LeanAtlas.Metadata.Attribute.Meta
 import InfinityCosmos.ForMathlib.AlgebraicTopology.SimplicialSet.CoherentIso
 import Mathlib.AlgebraicTopology.Quasicategory.StrictBicategory
 import Mathlib.AlgebraicTopology.SimplicialSet.Basic
@@ -92,7 +93,10 @@ def InnerHornIsoInclusions : MorphismProperty SSet := fun _ _ p ↦ InnerHornIso
 /-- Definition of isofibration: A simplicial map between quasi-categories is an
   \textbf{isofibration} if it lifts against the inner horn inclusions, as displayed
   belowleft, and also against the inclusion of either vertex into the coherent isomorphism. -/
-@[blueprint
+@[formalMeta "Isofibration"
+  "A simplicial map lifting against inner horn inclusions and coherent isomorphism inclusions"
+  "Definition 1.1.2" mainTheorem,
+blueprint
   "defn:qcat-isofibration"
   (title := "isofibration")
   (statement := /--

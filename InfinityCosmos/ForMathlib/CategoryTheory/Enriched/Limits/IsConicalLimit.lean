@@ -5,6 +5,7 @@ Authors: Jon Eugster, Dagur Asgeirsson, Emily Riehl
 -/
 
 import Architect
+import LeanAtlas.Metadata.Attribute.Meta
 import Mathlib.CategoryTheory.Enriched.Limits.HasConicalLimits
 import InfinityCosmos.ForMathlib.CategoryTheory.Enriched.Limits.HasConicalLimits
 
@@ -42,7 +43,10 @@ A limit cone `c` in a `V`-enriched ordinary category `C` is a *`V`-enriched limi
 (or *conical limit*) if for every `X : C`, the cone obtained by applying the coyoneda
 functor `(X ⟶[V] -)` to `c` is a limit cone in `V`.
 -/
-@[blueprint
+@[formalMeta "Conical Limit"
+  "A limit cone preserved by enriched representable functors, giving an enriched universal property"
+  "Definition 1.1.7" mainTheorem,
+blueprint
   "defn:simplicial-conical-limit"
   (title := "simplicial conical limits")
   (statement := /--
